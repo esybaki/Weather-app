@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Vazirmatn' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<style>
+    body{
+    
+    font-family: 'Vazirmatn';
+    
+}
+    .navbar{
+/* width: Fill (1,440px)px;
+height: Hug (96px)px; */
+padding: 32px 56px 32px 56px;
+gap: 0px;
+border: 0px 0px 1px 0px solid #9d9a9a;
+display: flex;
+justify-content: space-between;
+opacity: 0px;
+
+    }
+    .leftLogo{
+font-size: 16px;
+font-weight: 700;
+line-height: 16px;
+
+    }
+    .rightDrop{
+        display: flex;
+        justify-items: baseline;
+        height: 2rem;
+        
+    }
+    .contain{
+        display: flex;
+        justify-content: space-around;
+    }
+    .container{
+width: 488px;
+height: 637px;
+display: flex;
+flex-direction: column;
+text-align: center;
+    }
+
+    #logoTemp{
+        text-align: center;
+    }
+    #imageW{
+        width: 200px;
+height: 200px;
+
+    }
+    #temp{
+        margin-bottom: 0px;
+    }
+    #logoLoc{
+        margin-top: 4px;
+        color: #B3B3B3;
+    }
+    .chartW{
+width: 488px;
+height: 98px;
+padding: 24px 0px 0px 0px;
+gap: 20px;
+border-radius: 12px 0px 0px 0px;
+border: 1px solid #EFEFEF;
+
+
+    }
+    #div1{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 20px;
+    }
+    #div2{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 0px 20px 20px 20px;
+    }
+    @media only screen and (max-width: 392px) {
+
+.container{
+width: 343px;
+height: 637px;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+#div1{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#div2{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.chartW{
+width: 343px;
+height: 98px;
+padding: 20px 0px 0px 0px;
+gap: 20px;
+border-radius: 12px;
+border: 1px solid #EFEFEF;
+
+
+    }
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <h3 class="leftLogo">Starweather</h3>
+            <div class="rightDrop">
+                <select name="city" id="city">
+                    <option value="tehran">تهران</option>
+                  </select>
+                <img src="location.png" alt="">
+
+            </div>
+        </nav>
+    </header>
+    <div class="contain">
+        <div class="container">
+            <div id="logoTemp">
+    
+            </div>
+            <div class="chartW" id="chartW">
+                <div id="div1">
+
+                </div>
+                <div id="div2">
+
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
